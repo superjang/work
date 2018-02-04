@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, select, textarea, p, blockquote, th, td, legend, button{
+  font-weight:normal;
+  font-family: 'Nanum Gothic', 'Malgun Gothic','Droid Sans','Apple-Gothic','애플고딕','Tahoma',dotum,'돋움',gulim,'굴림',sans-serif;
+}
+
+html,body {
+  height: 100%
+}
+
+body {
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-text-size-adjust: none
+}
+
+ul,ol,li {
+  list-style: none
+}
+
+a {
+  color: #000;
+  text-decoration: none
+}
+
+img,fieldset,button,input {
+  border: 0 none;
+  background-color:transparent;
+}
+
+img,input,select,textarea {
+  vertical-align: middle
+}
+
+address,em {
+  font-style: normal
+}
+
+legend {
+  display: none
+}
+
+input:focus {
+  outline: 0
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0
+}
+
+input[type="text"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0
+}
+
+input:checked[type="checkbox"] {
+  -webkit-appearance: checkbox
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none
+}

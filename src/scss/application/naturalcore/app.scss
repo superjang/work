@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// common
+@import "../../common/util/mixin";
+@import "../../common/util/variables";
+@import "../../common/util/sprite";
+@import "../../common/ui/reset";
+@import "../../common/font/nanum_gothic";
+@import "../../common/ui/layout";
+
+// sprite
+@import "../../sprite/naturalcore";
+
+@import "../../include/naturalcore/common/layout";
+@import "../../include/naturalcore/common/header";
+@import "../../include/naturalcore/common/footer";
+@import "../../include/naturalcore/common/local_navigation";
+@import "../../include/naturalcore/common/content_template";
+
+// main
+@import "../../include/naturalcore/page/main/main_slider";
+@import "../../include/naturalcore/page/main/show_window";
+@import "../../include/naturalcore/page/product/product_list";
+@import "../../include/naturalcore/page/product/product_detail";

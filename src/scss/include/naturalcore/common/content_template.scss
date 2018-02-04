@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+.description_page{
+  width:990px;
+  margin:32px auto 50px;
+  .page_title{
+    display: block;
+    font-weight:bold;
+    font-size: 32px;
+    color: #555555;
+    line-height: 32px;
+    padding-bottom: 30px;
+  }
+
+  .description{
+    margin-bottom:60px;
+    .box_title{
+      display: block;
+      font-weight:bold;
+      font-size: 16px;
+      color: #555555;
+      line-height: 19px;
+      padding-bottom: 14px;
+
+      &.icon_1{
+        padding-left: 20px;
+        background: url('/image/single/common/certification01.jpg') left top no-repeat;
+      }
+    }
+    .box_text{
+      padding-left:60px;
+      .text{
+        font-size: 13px;
+        line-height: 20px;
+        color: #777777;
+      }
+    }
+  }
+  // 네츄럴코어 소개
+  .description_intro{
+    .img_info{
+      margin-bottom:12px;
+    }
+    .img_desc_box{
+      font-size: 12px;
+      color: #999999;
+      &.icon_1{
+        padding-left: 40px;
+        background: url('/image/single/naturalcore/core/intro/intro01_02.jpg') left no-repeat;
+      }
+    }
+
+    .simbol_desc{
+      height:130px;
+      margin-top:30px;
+      background: url('/image/single/naturalcore/core/intro/intro01_03.jpg') left no-repeat;
+      .text{
+        padding: 80px 0 0 140px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    .flow_list{
+      padding-left:70px;
+      background:url('/image/single/naturalcore/core/intro/intro02.jpg') no-repeat left top;
+      .item{
+        margin-bottom: 11px;
+        .title{
+          display: block;
+          font-weight:bold;
+          font-size: 13px;
+          color: #777777;
+          line-height: 15px;
+          padding-bottom: 3px;
+        }
+        .text{
+          color:#999;
+        }
+      }
+    }
+  }
+
+  // 네츄럴코어스토리
+  .description_story{
+   .story_text{
+     font-size: 13px;
+     line-height: 20px;
+     color: #777777;
+      margin-bottom:8px;
+     .green{
+       color:#3c720e;
+       font-weight:bold;
+     }
+   }
+
+    .organic_story_list{
+      @include clearfix;
+      .item{
+        width:470px;
+        height:188px;
+        margin-right:25px;
+        float:left;
+        .title{
+          font-weight:bold;
+          font-size: 14px;
+          color: #555555;
+          line-height: 16px;
+          padding-bottom: 12px;
+        }
+        .story_box{
+          @include clearfix;
+          .thumbnail{
+            width:173px;
+            height:122px;
+            float:left;
+            margin-right:10px;
+          }
+          .story{
+            width:286px;
+            float:left;
+            font-size: 13px;
+            line-height: 20px;
+            color: #777777;
+            .green{
+              color:#3c720e;
+              font-weight:bold;
+            }
+            .gray{
+              font-weight:bold;
+              color:#666666;
+            }
+          }
+        }
+        &.story1{
+          margin-bottom:25px;
+          .thumbnail{
+            background:url('/image/single/naturalcore/core/story/story03.jpg') no-repeat left top;
+          }
+          .story{
+            margin-top:10px;
+          }
+        }
+        &.story2{
+          margin-bottom:25px;
+          .thumbnail{
+            background:url('/image/single/naturalcore/core/story/story04.jpg') no-repeat left top;
+          }
+          .story{
+            margin-top:10px;
+          }
+        }
+        &.story3{
+          margin-bottom:15px;
+          .thumbnail{
+            background:url('/image/single/naturalcore/core/story/story05.jpg') no-repeat left top;
+          }
+          .story{
+            margin-top:7px;
+          }
+        }
+        &.story4{
+          margin-bottom:15px;
+          .thumbnail{
+            background:url('/image/single/naturalcore/core/story/story06.jpg') no-repeat left top;
+          }
+          .story{
+            margin-top:25px;
+          }
+        }
+      }
+    }
+  }
+
+  // 유기농인증
+  .description_certification{
+    .img_info{
+        margin-bottom:8px;
+      }
+    .img_desc{
+      display: block;
+      font-size: 11px;
+      color: #888888;
+      line-height: 16px;
+    }
+
+    .certification_list{
+      @include clearfix;
+      .item{
+        float:left;
+        display: block;
+        margin-right:20px;
+        .link{
+          width: 174px;
+          height: 283px;
+          border: 3px solid #e2e2e2;
+          display:block;
+          .text{
+            display: block;
+            font-size: 13px;
+            color: #777777;
+            line-height: 15px;
+            text-align: center;
+          }
+          &:hover,
+          &:focus{
+            border: 3px solid #91b436;
+          }
+        }
+      }
+    }
+  }
+
+  // 채용공고
+  .description_recurit{
+    .flow_list{
+      height:169px;
+      padding-left:50px;
+      background:url('/image/single/naturalcore/core/recurit/recruit01.jpg') no-repeat left top;
+      .item{
+        margin-bottom: 14px;
+        padding-top: 3px;
+        .title{
+          display: block;
+          font-weight:bold;
+          font-size: 13px;
+          color: #777777;
+          line-height: 15px;
+          padding-bottom: 3px;
+        }
+        .text{
+          color:#999;
+        }
+      }
+    }
+    .recurit_info_table{
+      background-color:#dedede;
+      .em{color:#f00;}
+      thead{
+        th{
+          height: 25px;
+          background: #f5f5f5;
+          font-size: 12px;
+          color: #848383;
+          text-align: center;
+        }
+      }
+      tbody{
+        td{
+          height: 54px;
+          background: #ffffff;
+          font-size: 12px;
+          color: #848383;
+          text-align: center;
+        }
+      }
+
+      &.table_2{
+        margin-top:3px;
+      }
+    }
+
+    .email{
+      padding-left: 19px;
+      background: url('/image/single/naturalcore/core/common/icon_map01.jpg') bottom left no-repeat;
+      color: #799e1d;
+      text-decoration: underline;
+    }
+    .call_info{
+      display: block;
+      width: 280px;
+      height: 32px;
+      background:#f0f0f0 url('/image/single/naturalcore/core/recurit/recruit03.jpg') left no-repeat;
+      font-family: '돋움', '돋움체';
+      font-size: 11px;
+      color: #777777;
+      line-height: 32px;
+      padding-left: 36px;
+      margin-top: 12px;
+    }
+  }
+
+  // 찾아오는길
+  .description_map{
+    margin-bottom:50px;
+    .address_info_box{
+      position:relative;
+      .address_info_list{
+        @include clearfix;
+        .item{
+          float:left;
+          margin-right:50px;
+          position:relative;
+          &:after{
+            content:'';
+            display:block;
+            position:absolute;
+            right:-25px;
+            top:0;
+            width:3px;
+            height:70px;
+            background:url('/image/single/naturalcore/core/map/mapLineD.jpg') no-repeat left top;
+          }
+          .thumbnail{
+            width:68px;
+            height:70px;
+            float:left;
+            margin-right:8px;
+          }
+          .info{
+            float:left;
+            .title{
+              display: block;
+              font-weight:bold;
+              font-size: 13px;
+              color: #777777;
+              line-height: 15px;
+              padding-bottom: 3px;
+            }
+          }
+          &.address{
+            .thumbnail{
+              background:url('/image/single/naturalcore/core/map/map01.jpg') no-repeat left top;
+            }
+            .info{
+              margin-top:5px;
+            }
+            .address_text{
+              font-size: 13px;
+              line-height: 20px;
+              color: #777777;
+            }
+          }
+          &.call{
+            .thumbnail{
+              background:url('/image/single/naturalcore/core/map/map02.jpg') no-repeat left top;
+            }
+            .info{
+              margin-top:15px;
+            }
+            .number{
+              font-weight:bold;
+              line-height:20px;
+              font-size:17px;
+              color:#799e1d;
+            }
+          }
+          &.email{
+            .thumbnail{
+              background:url('/image/single/naturalcore/core/map/map03.jpg') no-repeat left top;
+            }
+            .info{
+              margin-top:15px;
+            }
+            margin-right:0;
+            &:after{
+              display:none;
+            }
+
+            .email{
+              padding-left: 19px;
+              background: url('/image/single/naturalcore/core/common/icon_map01.jpg') left no-repeat;
+              color: #799e1d;
+              text-decoration: underline
+            }
+          }
+        }
+      }
+      .map_link{
+        position:absolute;
+        right:0;
+        top:0;
+        @include clearfix;
+        .link{
+          float:left;
+          display:block;
+          &.google_map{
+            margin-right:3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.img_viewer{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right:0;
+  bottom:0;
+  z-index: 6000;
+  display:none;
+  &.on{
+    display:block;
+  }
+  .bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index:6000;
+  }
+
+  .img{
+    position: fixed;
+    z-index:6000;
+    height: 778px;
+    width: 550px;
+    left: 50%;
+    margin-left:-255px;
+    top: 82.5px;
+  }
+}

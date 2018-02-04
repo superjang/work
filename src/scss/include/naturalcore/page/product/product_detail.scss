@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+.product_detail_info{
+  margin-bottom:30px;
+  padding: 34px 40px 20px;
+  border-top: 1px solid #d8d8d8;
+  background: #f5f5f5;
+  @include clearfix;
+  .thumbnail{
+    float:left;
+  }
+  .detail_info{
+    width:634px;
+    float:right;
+    >.title{
+      font-weight: bold;
+      font-size: 23px;
+      color: #4d4d4d;
+      line-height: 25px;
+      padding-right: 5px;
+      margin-bottom:6px;
+    }
+
+    .info_table{
+      background:url('/image/single/naturalcore/product/detail/dotline01.jpg') repeat-x left top;
+      >tbody{
+        >tr{
+          >td{
+            position:relative;
+            background:url('/image/single/naturalcore/product/detail/dotline01.jpg') repeat-x left bottom;
+            padding:10px 0;
+            &.left{
+              &:after{
+                position:absolute;
+                right:0;
+                top:0;
+                bottom:0;
+                content:'';
+                display:block !important;
+                width:1px;
+                background:url('/image/single/naturalcore/product/detail/dotline01_ver.jpg') no-repeat right top;
+              }
+            }
+            &.last{
+              background:none;
+            }
+            &.horizen{
+              @include clearfix;
+              .title{
+                float:left;
+                width:60px;
+                position:relative;
+                margin-right:10px;
+                padding-right:10px;
+                &:before{
+                  position: absolute;
+                  left: -10px;
+                  top: 7px;
+                  width: 5px;
+                  height: 5px;
+                  background-color:#818181;
+                  content:'';
+                  display:block;
+                }
+                &:after{
+                  position: absolute;
+                  right:0;
+                  top: 6px;
+                  width: 1px;
+                  height: 8px;
+                  background-color:#e3e3e3;
+                  content:'';
+                  display:block;
+                }
+                font-weight: bold;
+                margin-left:15px;
+                font-size: 15px;
+                color: #818181;
+                line-height: 18px;
+              }
+              .info{
+                margin-top:-3px;
+                width:212px;
+                float:left;
+                font-size: 15px;
+                color: #818181;
+                line-height: 24px;
+              }
+            }
+
+            &.vertical{
+              .title{
+                position:relative;
+                &:before{
+                  position: absolute;
+                  left: -10px;
+                  top: 7px;
+                  width: 5px;
+                  height: 5px;
+                  background-color:#818181;
+                  content:'';
+                  display:block;
+                }
+                font-weight: bold;
+                margin-left:15px;
+                font-size: 15px;
+                color: #818181;
+              }
+              .info{
+                font-size: 15px;
+                color: #818181;
+                line-height: 24px;
+                margin-top:8px;
+                margin-left:10px;
+              }
+            }
+          }
+        }
+      }
+      .component_table{
+        background:#dedede;
+        border-collapse: collapse;
+        thead{
+          th{
+            border:1px solid #dedede;
+            line-height: 30px;
+            background: #f5f5f5;
+            font-size: 13px;
+            color: #848383;
+            width: 80px;
+            text-align: center;
+          }
+        }
+        tbody{
+          td{
+            border:1px solid #dedede;
+            background-color:#fff;
+            text-align:center;
+            height:50px;
+          }
+        }
+      }
+    }
+  }
+}
+.product_detail_info_img{
+  margin-bottom:30px;
+  img{
+    display:block;
+    margin:0 auto;
+  }
+}
+.relative_product_list{
+  @include clearfix;
+  margin-bottom:30px;
+  .info{
+    float: left;
+    width: 169px;
+    height: 69px;
+    font-size: 12px;
+    color: #9c9b9b;
+    line-height: 18px;
+    padding: 78px 0 0 18px;
+    margin-right: 2px;
+    //width:187px;
+    //height:147px;
+    background:url('/image/single/naturalcore/product/detail/relatedGoods.jpg') no-repeat left top;
+    .count{
+      font-size: 16px;
+      color: #ffffff;
+    }
+    .em{
+      color:#5f992c;
+    }
+  }
+  .list{
+    position:relative;
+    padding:0 30px;
+    width: 739px;
+    float: left;
+    overflow:hidden;
+    .btn_prev,
+    .btn_next{
+      position:absolute;
+      cursor:pointer;
+      width:30px;
+      height:147px;
+      top:0;
+      background-repeat:no-repeat;
+      background-position:left top;
+    }
+    .btn_prev{
+      left:0;
+      background-image:url('/image/single/naturalcore/product/detail/bt_relatedGoods01.jpg');
+      &:hover,
+      &:focus{
+        background-image:url('/image/single/naturalcore/product/detail/bt_relatedGoods01_over.jpg');
+      }
+    }
+    .btn_next{
+      right:0;
+      background-image:url('/image/single/naturalcore/product/detail/bt_relatedGoods02.jpg');
+      &:hover,
+      &:focus{
+        background-image:url('/image/single/naturalcore/product/detail/bt_relatedGoods02_over.jpg');
+      }
+    }
+    .related_item_list{
+      @include clearfix;
+      >.item{
+        float:left;
+        width:147px;
+        height:147px;
+        position:relative;
+        &:after{
+          content:'';
+          display:block;
+          position:absolute;
+          right:0;
+          top:0;
+          width:1px;
+          height:147px;
+          background:url('/image/single/naturalcore/product/detail//dotLine02.jpg') no-repeat left top;
+        }
+        .link{
+          display:block;
+          position:relative;
+          img{
+            width:110px;
+            display:block;
+            margin:0 auto;
+          }
+          .desc{
+            display: none;
+            font-size: 12px;
+            color: #4d4d4d;
+            line-height: 18px;
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+            left: 0;
+            right: 0;
+            width: 127px;
+            height: 40px;
+            text-align: center;
+            padding: 5px 10px;
+            overflow: hidden;
+
+          }
+          &:hover,
+          &:focus{
+            .desc{
+              display:block;
+            }
+            .frame{
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 147px;
+              height: 147px;
+              background: url('/image/single/naturalcore/product/detail/goodsOver.png') no-repeat left top;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+%sp-naturalcore {
+    background: url('/image/sprite/naturalcore/sp-naturalcore.png?v=#{timestamp()}') no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    background-size:(920px/2) (820px/2);
+    -webkit-background-size:(920px/2) (820px/2);
+}
+
+@mixin sp-naturalcore($filename, $padding-top:0, $padding-right:0, $padding-bottom:0, $padding-left:0){
+	$dimension-map: map-get($sp-naturalcore, $filename);
+    @extend %sp-naturalcore;
+	@include sp-mosaic-base($sp-naturalcore, $dimension-map, $filename, $padding-top, $padding-right, $padding-bottom, $padding-left);
+}
+
+$sp-naturalcore: (
+    spritesheet_name: sp-naturalcore,
+    arrow-pre_2x: (offset_x: -264px, offset_y: -706px, width: 14px, height: 20px),
+    arrow_broadcast_2x: (offset_x: -908px, offset_y: -220px, width: 10px, height: 16px),
+    best_rank_2x: (offset_x: -692px, offset_y: -532px, width: 32px, height: 14px),
+    btn-live-more_2x: (offset_x: -808px, offset_y: -416px, width: 104px, height: 104px),
+    dot-navi-arrow_2x: (offset_x: -836px, offset_y: -644px, width: 18px, height: 18px),
+    dot-navi-arrow_on_2x: (offset_x: -858px, offset_y: -644px, width: 18px, height: 18px),
+    ico-arrow-chanel-up_2x: (offset_x: -728px, offset_y: -532px, width: 20px, height: 12px),
+    ico-call_2x: (offset_x: -430px, offset_y: -214px, width: 34px, height: 34px),
+    ico-callus_2x: (offset_x: -684px, offset_y: -550px, width: 116px, height: 44px),
+    ico-chanel-on_2x: (offset_x: -708px, offset_y: -602px, width: 64px, height: 64px),
+    ico-chanel_2x: (offset_x: -840px, offset_y: -302px, width: 64px, height: 64px),
+    ico-checkpoint_2x: (offset_x: -244px, offset_y: -358px, width: 192px, height: 44px),
+    ico-clock_2x: (offset_x: -430px, offset_y: -252px, width: 32px, height: 32px),
+    ico-downsize_2x: (offset_x: -48px, offset_y: -768px, width: 40px, height: 40px),
+    ico-expand_2x: (offset_x: -92px, offset_y: -768px, width: 40px, height: 40px),
+    ico-heart_2x: (offset_x: -880px, offset_y: -370px, width: 36px, height: 32px),
+    ico-heart_on_2x: (offset_x: -840px, offset_y: -370px, width: 36px, height: 32px),
+    ico-howto_2x: (offset_x: -558px, offset_y: -550px, width: 122px, height: 44px),
+    ico-live-chart_2x: (offset_x: -868px, offset_y: -602px, width: 28px, height: 28px),
+    ico-live-pre_2x: (offset_x: -900px, offset_y: -602px, width: 20px, height: 26px),
+    ico-live-prev_2x: (offset_x: -244px, offset_y: -706px, width: 16px, height: 20px),
+    ico-noun_2x: (offset_x: -776px, offset_y: -644px, width: 32px, height: 22px),
+    ico-redirection_2x: (offset_x: -430px, offset_y: -324px, width: 34px, height: 28px),
+    ico-smilecash_2x: (offset_x: -214px, offset_y: -706px, width: 26px, height: 26px),
+    ico-sns_2x: (offset_x: -430px, offset_y: -288px, width: 30px, height: 32px),
+    icon-1_2x: (offset_x: -372px, offset_y: -416px, width: 182px, height: 182px),
+    icon-2_2x: (offset_x: -186px, offset_y: -416px, width: 182px, height: 182px),
+    icon-3_2x: (offset_x: -468px, offset_y: -220px, width: 182px, height: 182px),
+    icon-4_2x: (offset_x: 0, offset_y: -416px, width: 182px, height: 182px),
+    icon-5_2x: (offset_x: -244px, offset_y: -172px, width: 182px, height: 182px),
+    icon-6_2x: (offset_x: -654px, offset_y: -220px, width: 182px, height: 182px),
+    icon-list_2x: (offset_x: -520px, offset_y: -602px, width: 94px, height: 94px),
+    phone_2x: (offset_x: -812px, offset_y: -644px, width: 20px, height: 20px),
+    play-14_2x: (offset_x: -430px, offset_y: -172px, width: 32px, height: 38px),
+    play-20_2x: (offset_x: 0, offset_y: -768px, width: 44px, height: 52px),
+    play-28_2x: (offset_x: -840px, offset_y: -220px, width: 64px, height: 78px),
+    play-54_2x: (offset_x: -692px, offset_y: -416px, width: 112px, height: 112px),
+    right-n-10_2x: (offset_x: -440px, offset_y: -358px, width: 22px, height: 42px),
+    share_facebook: (offset_x: -104px, offset_y: -602px, width: 100px, height: 100px),
+    share_kakaostory: (offset_x: -312px, offset_y: -602px, width: 100px, height: 100px),
+    share_kakaotalk: (offset_x: -208px, offset_y: -602px, width: 100px, height: 100px),
+    share_line: (offset_x: 0, offset_y: -602px, width: 100px, height: 100px),
+    share_twitter: (offset_x: -416px, offset_y: -602px, width: 100px, height: 100px),
+    small-heart-g_2x: (offset_x: -62px, offset_y: -706px, width: 58px, height: 58px),
+    small-heart-g_on_2x: (offset_x: 0, offset_y: -706px, width: 58px, height: 58px),
+    soldout-img-120-mobile_2x: (offset_x: 0, offset_y: -172px, width: 240px, height: 240px),
+    soldout-img-43-mobile_2x: (offset_x: -618px, offset_y: -602px, width: 86px, height: 86px),
+    soldout-img-65-mobile_2x: (offset_x: -558px, offset_y: -416px, width: 130px, height: 130px),
+    tag-live-44_2x: (offset_x: -776px, offset_y: -602px, width: 88px, height: 38px),
+    tag-special_2x: (offset_x: -804px, offset_y: -550px, width: 114px, height: 38px),
+    tag-vod_2x: (offset_x: -124px, offset_y: -706px, width: 86px, height: 38px),
+    title-callus_2x: (offset_x: 0, offset_y: 0, width: 464px, height: 168px),
+    title-checkpoint_2x: (offset_x: -468px, offset_y: -110px, width: 450px, height: 106px),
+    title-howto_2x: (offset_x: -468px, offset_y: 0, width: 452px, height: 106px),
+);

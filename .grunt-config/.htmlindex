@@ -1,0 +1,8 @@
+{
+    "basePath": "./build/html",
+    "outPath": "./build/html",
+    "linkPath": "./build/html",
+    "exceptDirs": [
+        "include"
+    ]
+}

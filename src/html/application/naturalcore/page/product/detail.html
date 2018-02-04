@@ -1,0 +1,152 @@
+@@include("common/document/start.html", {
+"title":"네츄럴코어(주)",
+"cssPath":"naturalcore",
+"pageName": "product"
+})
+
+@@include("common/ui/header.html")
+
+<div id="content">
+    @@include("naturalcore/product/page_lnb.html", {
+    "bgImg":"productVisual00.jpg"
+    })
+    <div class="description_page">
+        <p class="page_title">강아지 전체상품</p>
+
+        <div class="product_detail_info">
+            <img src="@@singleImage/naturalcore/product/detail/자스민L 웹용 모형도.jpg" alt="" class="thumbnail">
+            <div class="detail_info">
+                <p class="title">네츄럴센츠 핑크자스민 샴푸 <img src="@@singleImage/naturalcore/product/icon_new.jpg" alt="NEW" class="icon"></p>
+                <table class="info_table">
+                    <colgroup>
+                        <col width="315">
+                        <col width="315">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" class="left vertical">
+                                <p class="title">제품특징</p>
+                                <div class="info">
+                                    유기농 바오밥 열매 단백질 함유<br/>
+                                    無 설페이트, MIT, 잔탐검<br/>
+                                    친환경 샴푸
+                                </div>
+                            </td>
+                            <td class="horizen">
+                                <p class="title">입자크기</p>
+                                <div class="info">
+                                    입자크기 정보
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="horizen">
+                                <p class="title">원재료</p>
+                                <div class="info">
+                                    바오밥나무열매단백질, 윗점오일, 알로에베라
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="horizen">
+                                <p class="title">원산지</p>
+                                <div class="info">
+                                    원산지 정보
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left horizen">
+                                <p class="title">대상</p>
+                                <div class="info">
+                                    대상 정보
+                                </div>
+                            </td>
+                            <td class="horizen">
+                                <p class="title">용량</p>
+                                <div class="info">
+                                    용량 정보
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="vertical last">
+                                <p class="title">보증성분</p>
+                                <div class="info">
+                                    <table width="100%" class="component_table">
+                                        <thead>
+                                            <tr>
+                                                <th>조단백질</th>
+                                                <th>조지방</th>
+                                                <th>칼슘</th>
+                                                <th>인</th>
+                                                <th>수분</th>
+                                                <th>조회분</th>
+                                                <th>조섬유</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-<!-- 칼슘 --></td>
+                                                <td>-<!-- 인 --></td>
+                                                <td>-<!-- 수분 --></td>
+                                                <td>-<!-- 조회분 --></td>
+                                                <td>-<!-- 조섬유 --></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="product_detail_info_img">
+            <img src="http://www.naturalpetcare.co.kr/imagedata/20170203154746_499933015.jpg" alt="">
+        </div>
+
+        <div class="relative_product_list">
+            <div class="info">
+                <p class="text">총 <span class="count">3</span>개의
+                <span class="em">관련제품</span>이<br/>준비되어 있습니다.</p>
+            </div>
+            <div class="list">
+                <button type="button" class="btn_prev"></button>
+                <!-- [D] 플러그인 적용시 리스트 개수만큼 동적으로 width 값 처리해 주세요 -->
+                <ul class="related_item_list">
+                    <li class="item">
+                        <a href="" class="link">
+                            <img src="@@singleImage/naturalcore/product/detail/투스칸L 웹용 모형도.jpg" alt="">
+                            <span class="desc">네츄럴센츠 투스칸올리브 샴푸</span>
+                            <span class="frame"></span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">
+                            <img src="@@singleImage/naturalcore/product/detail/투스칸L 웹용 모형도.jpg" alt="">
+                            <span class="desc">네츄럴센츠 투스칸올리브 샴푸</span>
+                            <span class="frame"></span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">
+                            <img src="@@singleImage/naturalcore/product/detail/투스칸L 웹용 모형도.jpg" alt="">
+                            <span class="desc">네츄럴센츠 투스칸올리브 샴푸</span>
+                            <span class="frame"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="btn_next"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include("common/ui/footer.html")
+@@include("common/script/common.html")
+@@include("common/script/application.html", { "applicationName":"naturalcore" })
+@@include("common/document/end.html")

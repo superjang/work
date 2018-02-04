@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+.page_local_navigation {
+  width: 990px;
+  margin: 0 auto;
+  height: 294px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  @include clearfix;
+
+  .visual {
+    float: left;
+    width: 820px;
+    height: 100%;
+  }
+  .local_menu_type_1 {
+    float: right;
+    width: 170px;
+    position: relative;
+    .local_menu_list {
+      .item {
+        .link {
+          display: block;
+          width: 100%;
+          height: 34px;
+          font-weight: bold;
+          font-size: 13px;
+          color: #6c6c6c;
+          line-height: 34px;
+          text-indent: 16px;
+          border-bottom: 1px solid #ffffff;
+          &:hover,
+          &:focus {
+              color: #ededed;
+              background: #474747;
+          }
+        }
+        &.on {
+          .link {
+            color: #ededed;
+            background: #474747;
+          }
+        }
+      }
+    }
+  }
+
+    .local_menu_type_2 {
+      float: right;
+      width: 170px;
+      position: relative;
+      .local_menu_list {
+        > .item {
+          > .link {
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 34px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #6c6c6c;
+            line-height: 34px;
+            border-bottom: 1px solid #ffffff;
+            &:hover,
+            &:focus {
+              color: #ededed;
+              background: #474747;
+            }
+          }
+          .sub_category {
+            padding:6px 0;
+            border-bottom: 1px solid #ffffff;
+            @include clearfix;
+            > .item {
+              float: left;
+              width: 50%;
+              .link {
+                display: block;
+                text-align: center;
+                width: 80px;
+                padding: 10px 0;
+                font-weight: bold;
+                font-size: 12px;
+                color: #959595;
+                line-height: 20px;
+                background: #f0f0f0;
+                border: 0;
+              }
+              &:hover,
+              &:focus,
+              &.on {
+                .link {
+                  color: #5f5f5f;
+                }
+              }
+            }
+          }
+
+          &.last {
+            .sub_category {
+              border-bottom: none;
+            }
+          }
+
+          &.on {
+            .link {
+              color: #ededed;
+              background: #474747;
+            }
+          }
+        }
+      }
+    }
+
+}

@@ -1,0 +1,17 @@
+@@include("common/document/start.html", {
+    "title":"네츄럴코어(주)",
+    "cssPath":"naturalcore",
+    "pageName": "main"
+})
+
+@@include("common/ui/header.html")
+
+<div id="content">
+    @@include("naturalcore/main/main_slider.html")
+    @@include("naturalcore/main/show_window.html")
+</div>
+
+@@include("common/ui/footer.html")
+@@include("common/script/common.html")
+@@include("common/script/application.html", { "applicationName":"naturalcore" })
+@@include("common/document/end.html")

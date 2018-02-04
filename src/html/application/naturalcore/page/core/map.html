@@ -1,0 +1,66 @@
+@@include("common/document/start.html", {
+"title":"네츄럴코어(주)",
+"cssPath":"naturalcore",
+"pageName": "core"
+})
+
+@@include("common/ui/header.html")
+
+<div id="content">
+    @@include("naturalcore/core/page_lnb.html", {
+    "bgImg":"companyVisual.jpg"
+    })
+    <div class="description_page">
+        <p class="page_title">찾아오시는길</p>
+
+        <div class="description description_map">
+            <iframe width="986" height="398" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.kr/maps?f=q&amp;source=s_q&amp;hl=ko&amp;geocode=&amp;q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EC%88%98%EC%A0%95%EA%B5%AC+%ED%83%84%EC%B2%9C%EB%A1%9C307%EB%B2%88%EA%B8%B8+5&amp;sll=35.81905,127.8733&amp;sspn=13.277291,33.728027&amp;ie=UTF8&amp;hq=&amp;hnear=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EC%88%98%EC%A0%95%EA%B5%AC+%ED%83%84%EC%B2%9C%EB%A1%9C307%EB%B2%88%EA%B8%B8+5&amp;t=m&amp;ll=37.425321,127.116537&amp;spn=0.027129,0.084715&amp;z=14&amp;iwloc=A&amp;output=embed" style=" border:1px solid #aaaaaa; margin-bottom:13px;"></iframe>
+            
+            <div class="address_info_box">
+                <ul class="address_info_list">
+                    <li class="item address">
+                        <div class="thumbnail"></div>
+                        <div class="info">
+                            <p class="title">주소</p>
+                            <div class="text">
+                                <p class="address_text">[13446] 경기도 성남시 수정구 사송동 624-2</p>
+                                <p class="address_text">[신주소] 경기도 성남시 수정구 탄천로307번길 5</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item call">
+                        <div class="thumbnail"></div>
+                        <div class="info">
+                            <p class="title">대표전화</p>
+                            <div class="text">
+                                <p class="number">031-711-0595</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item email">
+                        <div class="thumbnail"></div>
+                        <div class="info">
+                            <p class="title">E-MAIL</p>
+                            <div class="text">
+                                <a href="mailto:2009naturalpet@gmail.com" class="email">2009naturalpet@gmail.com</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map_link">
+                    <a href="" class="link google_map">
+                        <img src="@@singleImage/naturalcore/core/map/bt_map01.jpg" alt="google map">
+                    </a>
+                    <a href="" class="link naver_map">
+                        <img src="@@singleImage/naturalcore/core/map/bt_map02.jpg" alt="naver map">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include("common/ui/footer.html")
+@@include("common/script/common.html")
+@@include("common/script/application.html", { "applicationName":"naturalcore" })
+@@include("common/document/end.html")

@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+.service--homeshopping{
+  background-color:#ececec;
+
+  // 공통
+  .box--module{
+    min-width:$min_safe_width;
+  }
+  // 홈탭
+  &.page--home_tab{
+    // 홈쇼핑 UI 컴포넌트 모듈 레이아웃
+    .box--module{
+      width:100%;
+      position:relative;
+      box-sizing: border-box;
+      box-shadow: 0 1px 0 0 #dedede;
+      margin-bottom: 10px;
+      overflow:hidden;
+
+      // 모듈 헤더영역
+      .box--module_header{
+        box-sizing:border-box;
+
+        .title{
+          font-size: 17px;
+          font-weight: bold;
+          line-height:1.1;
+          color: #333;
+          @include ellipsis;
+        }
+      }
+
+      // 모듈 컨텐츠영역
+      .box--module_body{
+
+      }
+
+      // TV 편성표
+      .box--broadcast_vendors_list{
+        // fixed list
+        .type-a{
+
+        }
+        // scrollable
+        .type-b{
+
+        }
+      }
+      // 고정 프로모션 영역
+      .box--banner_static{
+
+      }
+      // 업체별 프로모션 영역
+      .box--banner_vendor{
+
+      }
+      // 프로모션 빅 배너
+      .box--banner_promotion{
+
+      }
+      // Trend pick
+      .box--pick_trend{
+
+      }
+      // 최고의 1분
+      .box--pick_best{
+
+      }
+      // 인기프로그램
+      .box--list_popularity{
+
+      }
+      // 베스트
+      .box--list_best{
+
+      }
+    }
+  }
+
+  // 코너 - 편성표
+  .page--corner__broadcast_schedule{
+
+  }
+
+  // 코너 - 베스트
+  .page--corner__best{
+
+  }
+
+  // 코너 - 편성표/베스트
+  .page--corner__best,
+  .page--corner__broadcast_schedule{
+    .box--corner_navigation{
+
+    }
+  }
+
+  // VIP
+  .page--vip{
+
+  }
+
+  // Common UI
+  // 딜 컨텐츠 재생 레이어
+  .box--player{
+
+  }
+
+  // 공통 레이어
+  .box--layer{
+
+  }
+}

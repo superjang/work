@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.service--homeshopping{
+    .box--like__complete{
+      display:none;
+       width: 112px;
+       height: 112px;
+       margin: -56px -56px 0 0;
+        position: fixed;
+       top: 50%;
+       right: 50%;
+       z-index: 10;
+      .icon--like__complete{
+        width:100%;
+      }
+    }
+}

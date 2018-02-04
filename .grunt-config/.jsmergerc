@@ -1,0 +1,18 @@
+{
+    "src/js/common/common.js": {
+        "type": "common",
+        "name": "common",
+        "items": [
+            "lib/util/jquery/jquery-1.7.1.min.js",
+            "util/util.js"
+        ]
+    },
+
+    "src/js/application/naturalcore/app.js": {
+        "type": "application",
+        "name": "naturalcore" ,
+        "items": [
+            "common/common.js"
+        ]
+    }
+}

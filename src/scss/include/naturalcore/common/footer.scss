@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+#footer--outer{
+  width:100%;
+  background:url('/image/single/common/bottomBg.jpg') repeat left top;
+
+  .footer--inner{
+    width: 990px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding:27px 0 35px;
+    @include clearfix;
+
+    .global_navigation--full_list{
+      margin-left:13px;
+      margin-top:14px;
+      float:left;
+      @include clearfix;
+
+      .each_list{
+        float:left;
+        width: 110px;
+
+        &.core{
+          margin-right: 10px;
+        }
+
+        &.product{
+          margin-right: 10px;
+        }
+
+        &.store{
+          margin-right: 10px;
+        }
+
+        &.cs_center{
+          margin-right: 10px;
+        }
+
+        &.community{
+          margin-right: 10px;
+          .title{
+            &:after{
+              display:none !important;
+            }
+          }
+        }
+
+        .item{
+          &.title{
+            margin-bottom:12px;
+            position:relative;
+            &:after{
+              content:'';
+              display:block;
+              width:1px;
+              height:10px;
+              background-color:#497e1d;
+              position:absolute;
+              right: -5px;
+              top: 5px;
+            }
+
+            &:last-child{
+              &:after{
+                display:none;
+              }
+            }
+          }
+
+          .link{
+            display: block;
+            width: 91px;
+            height: 20px;
+            font-family: 'Nanum Gothic','돋움','돋움체';
+            font-size: 12px;
+            color:#2a4214;
+            line-height: 20px;
+
+            &:hover,
+            &:focus{
+              color: #000000;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .address--info{
+      float:left;
+      margin-left:65px;
+      .logo{
+        margin-bottom:8px;
+      }
+      .link_list{
+        margin-bottom:5px;
+        @include clearfix;
+        .item{
+          float:left;
+          margin-right:2px;
+
+          &:last-child{
+            margin-right:0;
+          }
+        }
+      }
+      .copyright{
+        color:#303030;
+        line-height:18px;
+        font-size:11px;
+      }
+    }
+  }
+}

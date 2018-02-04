@@ -1,0 +1,59 @@
+@@include("common/document/start.html", {
+"title":"네츄럴코어(주)",
+"cssPath":"naturalcore",
+"pageName": "core"
+})
+
+@@include("common/ui/header.html")
+
+<div id="content">
+    @@include("naturalcore/core/page_lnb.html", {
+    "bgImg":"companyVisual.jpg"
+    })
+    <div class="description_page">
+        <p class="page_title">유기농인증</p>
+
+        <div class="description description_certification">
+            <p class="box_title icon_1">네츄럴코어의 식품은 미국 USDA(미국 농무성)와 유럽 ECOCERT로부터 유기농 인증을 획득한 믿을 수 있는 제품입니다. </p>
+            <div class="box_text">
+                <img src="@@singleImage/naturalcore/core/certification/certification02.jpg" alt="" class="img_info">
+                <p class="img_desc">USDA : 미국 워싱턴에 있는 농업 정책을 관장하는 연방정부기관.</p>
+                <p class="img_desc">ECOCERT : 식품뿐만 아니라 화장품, 세제, 향수 및 섬유관련 유기농 인증을 관리하는 유럽 기관.</p>
+            </div>
+        </div>
+
+        <div class="description description_certification">
+            <p class="box_title">유기농인증서</p>
+            <ul class="certification_list">
+                <li class="item">
+                    <a href="" class="link">
+                        <img src="@@singleImage/naturalcore/core/certification/certification03_2017.jpg" alt="">
+                        <span class="text">ECOCERT 인증서</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <img src="@@singleImage/naturalcore/core/certification/certification08_2015.jpg" alt="">
+                        <span class="text">유기농 동물 사료의 생산 및 서비스</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <img src="@@singleImage/naturalcore/core/certification/certification09_2015.jpg" alt="">
+                        <span class="text">유기농 동물 사료의 생산 및 서비스</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- [D] 활성화시 on 클래스 사용 -->
+    <div class="img_viewer">
+        <span class="bg"></span>
+        <img src="@@singleImage/naturalcore/core/certification/over/certification08_2015.jpg" alt="" class="img">
+    </div>
+</div>
+@@include("common/ui/footer.html")
+@@include("common/script/common.html")
+@@include("common/script/application.html", { "applicationName":"naturalcore" })
+@@include("common/document/end.html")
