@@ -1,19 +1,52 @@
 @charset "utf-8";
 
 .slider--main{
-  width:100%;
+  width:1255px;
   height:385px;
   margin:0 auto;
   overflow:hidden;
+  position:relative;
 
   .slider--list{
+    width:10000px;
+    @include clearfix;
     .item{
+      float:left;
+      width:1255px;
       .link{
         height:385px;
         margin:0 auto;
         display:block;
         .img{
           height:100%;
+        }
+      }
+    }
+  }
+
+  .paging{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    a{
+      width: 30px;
+      height: 32px;
+      display: inline-block;
+      span{
+        width: 30px;
+        height: 32px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        background: url('/image/single/common/mainVisualBt.png') no-repeat;
+      }
+
+      &.selected{
+        span{
+          background: url('/image/single/common/mainVisualBt_over.png') no-repeat;
         }
       }
     }

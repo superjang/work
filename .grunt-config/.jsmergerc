@@ -12,7 +12,7 @@
         "type": "application",
         "name": "naturalcore" ,
         "items": [
-            "common/common.js"
+            "app.js"
         ]
     }
 }

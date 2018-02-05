@@ -127,7 +127,13 @@
               white-space: nowrap;
               overflow: hidden;
               display: block;
-              background: url(/main/images/mainVisualBt.png) no-repeat;
+              background: url('/image/single/common/mainVisualBt.png') no-repeat;
+            }
+
+            &.selected{
+              span{
+                background: url('/image/single/common/mainVisualBt_over.png') no-repeat;
+              }
             }
           }
         }
